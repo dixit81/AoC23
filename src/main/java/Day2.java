@@ -76,9 +76,8 @@ public class Day2 {
 
 
     private static List<String> readFile() {
-        final TestFileReaderUtility testFileReaderUtility = new TestFileReaderUtility();
         try {
-            return testFileReaderUtility.fetchData("day2.txt");
+            return TestFileReaderUtility.fetchData("day2.txt");
         } catch (final IOException e) {
             e.getLocalizedMessage();
         }
